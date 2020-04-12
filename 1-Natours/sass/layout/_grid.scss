@@ -1,6 +1,5 @@
 .row {
-    max-width: $grid-width;
-    background-color: #eee;
+    max-width: $grid-width; 
     margin: 0 auto; /*center block elem in thecenter of other block element*/    
 
     /*everything except last child*/
@@ -11,8 +10,7 @@
     @include clearfix;
 
     /*^ - starts, * - c ontains, $ endswith*/
-    [class^="col-"] {
-        background-color: orangered;
+    [class^="col-"] { 
         float: left;
         
         &:not(:last-child) {
